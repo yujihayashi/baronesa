@@ -17,8 +17,8 @@ NON-RESPONSIVE START
   width: 960px;
 }
 .navbar-nav > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
 /* Finesse the page header spacing */
@@ -95,11 +95,11 @@ NON-RESPONSIVE START
 NON-RESPONSIVE END
 */
 ::selection {
-  background-color: #812d2a;
+  background-color: #af0000;
   color: #FFF;
 }
 ::-moz-selection {
-  background-color: #812d2a;
+  background-color: #af0000;
   color: #FFF;
 }
 small {
@@ -113,11 +113,22 @@ a,
 button {
   transition: all 0.25s ease 0s;
 }
+hr {
+  background: url(../imagem/site/dashed.gif) repeat-x center;
+  height: 1px;
+  border: 0;
+}
 /*
 FONTS START
 **********************************************************************************************/
 .box-chamada {
   font-family: 'robotoblack', Arial, sans-serif;
+  font-weight: normal;
+}
+.box-chamadas .link,
+.footer-header,
+.navbar-nav {
+  font-family: 'hagin_caps_mediumregular', Arial, sans-serif;
   font-weight: normal;
 }
 /**********************************************************************************************
@@ -126,6 +137,90 @@ FONTS END
 /*
 ESTRUTURA START
 **********************************************************************************************/
+.extra-header {
+  background: url(../imagem/site/bg-header.jpg) no-repeat center top;
+}
+.extra-header .navbar {
+  border: 0;
+  margin: 0;
+  text-align: center;
+}
+.extra-header .navbar-header {
+  float: none;
+  text-align: center;
+}
+.extra-header .navbar-brand {
+  height: 112px;
+  padding: 5px 10px;
+  margin: 0;
+  display: block;
+  float: none;
+  position: relative;
+  z-index: 110;
+  width: 100%;
+  text-align: center;
+}
+.extra-header .navbar-brand > img {
+  display: inline-block;
+}
+.extra-header .navbar-nav {
+  margin-top: 42px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.extra-header .navbar-nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.extra-header .navbar-nav > li + li {
+  background: url(../imagem/site/bg-menu-item.png) no-repeat left center;
+  padding-left: 2px;
+}
+.extra-header .navbar-right {
+  margin-right: -20px;
+}
+.extra-header .navbar-left {
+  margin-left: -20px;
+}
+.extra-central {
+  background: url(../imagem/site/bg-central.jpg) repeat-y center top;
+}
+.extra-central .site-central {
+  background: url(../imagem/site/bg-central-top.jpg) no-repeat center top;
+}
+.extra-parceiros {
+  background: url(../imagem/site/bg-parceiros.jpg) no-repeat center top;
+}
+.extra-parceiros .box-social {
+  margin: 30px 0;
+}
+.extra-parceiros .box-parceiros {
+  margin: 15px 0;
+}
+.extra-footer {
+  font-size: 12px;
+  background: #af0000;
+  border-top: 3px solid #9c7c30;
+  border-bottom: 3px solid #9c7c30;
+}
+.extra-footer .site-footer {
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+.extra-footer .footer-header {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.extra-footer .social-footer > a,
+.extra-footer .social-footer > span {
+  display: inline-block;
+}
+.extra-footer .social-footer > a + a,
+.extra-footer .social-footer > span + a,
+.extra-footer .social-footer > a + span,
+.extra-footer .social-footer > span + span {
+  margin-left: 10px;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -150,6 +245,116 @@ CLASSES START
   -moz-border-radius: 150px;
   border-radius: 150px;
 }
+.box-parceiros {
+  text-align: center;
+  padding: 30px 0;
+}
+.box-parceiros .link {
+  display: inline-block;
+  margin: 10px 5px;
+}
+.box-social {
+  border: 1px solid #9c7c30;
+  height: 265px;
+  background: #000;
+}
+.box-social.facebook {
+  padding: 17px;
+}
+.box-social.instagram {
+  background-image: url(../imagem/site/box-instagram.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.box-banner {
+  background: url(../imagem/site/bg-banner.jpg) no-repeat center top;
+  position: relative;
+}
+.box-banner,
+.box-banner .cycle-slideshow,
+.box-banner .cycle-slideshow li {
+  height: 426px;
+  overflow: hidden;
+}
+.box-banner,
+.box-banner .cycle-slideshow li {
+  width: 100%;
+}
+.box-banner .cycle-slideshow {
+  max-width: 1262px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.box-banner .content {
+  position: relative;
+}
+.box-banner .hand {
+  position: absolute;
+  right: -40px;
+  top: -10px;
+}
+.box-banner .media-heading {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.34);
+  line-height: .8;
+}
+.box-banner .text {
+  width: 450px;
+  margin-left: 60px;
+  margin-top: 85px;
+}
+.box-banner .extra {
+  background: url(../imagem/site/bg-central-bottom.png) no-repeat center bottom;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 37px;
+}
+.box-chamadas {
+  background: url(../imagem/site/bg-chamadas.jpg) no-repeat center top;
+}
+.box-chamadas .chamada {
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.box-chamadas .chamada + .chamada {
+  border-left: 1px solid #000;
+}
+.box-chamadas .chamada,
+.box-chamadas .chamada .cycle-slideshow,
+.box-chamadas .chamada .cycle-slideshow li {
+  height: 286px;
+}
+.box-chamadas .chamada .cycle-slideshow,
+.box-chamadas .chamada .cycle-slideshow li {
+  width: 100%;
+}
+.box-chamadas .chamada .cycle-slideshow {
+  position: relative;
+  z-index: 1;
+}
+.box-chamadas .chamada .link {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  border: 1px solid #9c7c30;
+  text-align: center;
+  font-size: 26px;
+  text-transform: lowercase;
+  color: #FFF;
+  padding-top: 92px;
+}
+.box-chamadas .chamada.chamada-left .link {
+  text-indent: -1000px;
+  overflow: hidden;
+}
 .imagem {
   display: inline-block;
   overflow: hidden;
@@ -162,6 +367,7 @@ CLASSES START
 }
 .inline-block {
   display: inline-block;
+  vertical-align: middle;
 }
 [class^='icon-'],
 [class*='icon-'] {
@@ -178,6 +384,13 @@ CLASSES START
 }
 .relative {
   position: relative;
+}
+.text-warning {
+  color: #c9ac43;
+  transition: all 0.25s ease 0s;
+}
+.text-warning:hover {
+  color: #a98f30;
 }
 /**********************************************************************************************
 CLASSES END

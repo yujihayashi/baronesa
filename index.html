@@ -36,58 +36,139 @@
 				<div class="site-header">
 					<div class="container">
 						<nav class="navbar navbar-default" role="navigation">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="/" title="Voltar para a página inicial">Title</a>
-							</div>
-						
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse navbar-ex1-collapse">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
-								</ul>
-								<form class="navbar-form navbar-left" role="search">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Search">
-									</div>
-									<button type="submit" class="btn btn-default">Submit</button>
-								</form>
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Link</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div><!-- /.navbar-collapse -->
+							<div class="row">
+								<div class="col-xs-4">
+									<ul class="nav navbar-nav navbar-right">
+										<li><a href="/">Home</a></li>
+										<li><a href="#">Casa</a></li>
+										<li><a href="#">Cardápio</a></li>
+									</ul>
+								</div> <!-- .col-xs-4 -->
+								<div class="col-xs-4">
+									<div class="navbar-header">
+										<a class="navbar-brand" href="/" title="Voltar para a página inicial"><img src="/imagem/site/baronesa.png" alt="Logotipo Baronesa"></a>
+									</div> <!-- .navbar-header -->
+								</div> <!-- .col-xs-4 -->
+								<div class="col-xs-4">
+									<ul class="nav navbar-nav navbar-left">
+										<li class=""><a href="#">Parceiros</a></li>
+										<li class=""><a href="#">Galeria</a></li>
+										<li class=""><a href="#">Contato</a></li>
+									</ul>
+								</div> <!-- .col-xs-4 -->
+							</div> <!-- .row -->
 						</nav>
 					</div> <!-- .container -->
 				</div> <!-- .site-header -->
 			</header> <!-- .extra-header -->
 			<div class="extra-central">
 				<div class="site-central">
-					<div class="container">
-						
-					</div> <!-- .container -->
+					<div class="box-banner">
+						<ul class="cycle-slideshow">
+							<li>
+								<div class="content">
+									<span class="icon-hand hand"></span>
+									<div class="container">
+										<div class="text">
+											<h1 class="media-heading"><span class="imagem"><img src="/imagem/site/vem-para-o-baronesa.png" alt="Vem para o Baronesa"></span><span class="sr-only">Vem para o Baronesa</span></h1>
+											<hr>
+											<p>
+												Ambiente agrtadável, comidas e petiscos gostosos, chopp de qualidade, música ao vivo e transmissão de jogos/lutas.
+											</p>
+										</div> <!-- .text -->
+									</div> <!-- .container -->
+								</div> <!-- .content -->
+							</li>
+						</ul>
+						<div class="extra"></div>
+					</div> <!-- .box-banner -->
+					<div class="box-chamadas">
+						<div class="container">
+							<div class="chamada chamada-left">
+								<a href="#" class="link" title="Acesse nossa galeria">Acesse nossa galeria</a>
+								<ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-easing="easeInOutExpo" data-cycle-log="false">
+									<li><img src="/imagem/site/galeria-01.jpg" alt=""></li>
+									<li><img src="/imagem/site/galeria-01.jpg" alt=""></li>
+								</ul>
+							</div> <!-- .chamada -->
+							<div class="chamada chamada-right">
+								<a href="#" class="link">Confira nosso cardápio</a>
+								<ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-easing="easeInOutExpo" data-cycle-log="false">
+									<li><img src="/imagem/site/chamada-cardapio.jpg" alt=""></li>
+								</ul>
+							</div> <!-- .chamada -->
+						</div> <!-- .container -->
+					</div> <!-- .box-chamadas -->
 				</div> <!-- .site-central -->
 			</div> <!-- .extra-central -->
 			<footer>
+				<div class="extra-parceiros">
+					<div class="site-parceiros">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="box-parceiros">
+										<a href="#" target="_blank" class="link">
+											<img src="/imagem/site/parceiros/stella-artois.png" alt="Logotipo Stella Artois">
+										</a>
+										<a href="#" target="_blank" class="link">
+											<img src="/imagem/site/parceiros/brahma.png" alt="Logotipo Brahma">
+										</a>
+										<a href="#" target="_blank" class="link">
+											<img src="/imagem/site/parceiros/antarctica.png" alt="Logotipo Antarctica">
+										</a>
+										<a href="#" target="_blank" class="link">
+											<img src="/imagem/site/parceiros/bohemia.png" alt="Logotipo Bohemia">
+										</a>
+										<a href="http://www.budweiser.com/" target="_blank" class="link">
+											<img src="/imagem/site/parceiros/budweiser.png" alt="Logotipo Budweiser">
+										</a>
+									</div> <!-- .box-parceiros -->
+								</div> <!-- .col-xs-6 -->
+								<div class="col-xs-3">
+									<div class="box-social facebook">
+										<div id="fb-root"></div>
+										<script>(function(d, s, id) {
+											var js, fjs = d.getElementsByTagName(s)[0];
+											if (d.getElementById(id)) return;
+											js = d.createElement(s); js.id = id;
+											js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=607367415995227&version=v2.0";
+											fjs.parentNode.insertBefore(js, fjs);
+										}(document, 'script', 'facebook-jssdk'));</script>
+										<div class="fb-like-box" data-href="https://www.facebook.com/baronesa.belem?fref=ts" data-width="163" data-height="230" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+									</div> <!-- .box-social -->
+								</div> <!-- .col-xs-3 -->
+								<div class="col-xs-3">
+									<div class="box-social instagram">
+										
+									</div> <!-- .box-social -->
+								</div> <!-- .col-xs-3 -->
+							</div> <!-- .row -->
+						</div> <!-- .container -->
+					</div> <!-- .site-parceiros -->
+				</div> <!-- .extra-parceiros -->
 				<div class="extra-footer">
 					<div class="site-footer">
 						<div class="container">
-							<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+							<div class="row">
+								<div class="col-xs-6">
+									<span class="inline-block text-warning footer-header">Como chegar aqui!</span>
+									<span class="inline-block">
+										Domingos Marreiros, 259<br>
+										66073000 Belem Do Pará, Para, Brazil
+									</span>
+								</div> <!-- .col-xs-6 -->
+								<div class="col-xs-2">
+									<div class="social-footer">
+										<a href="#" title="Acesse nosso Facebook" target="_blank"><span class="icon-facebook"></span><span class="sr-only">Facebook</span></a>
+										<a href="#" title="Acesse nosso Twitter" target="_blank"><span class="icon-twitter"></span><span class="sr-only">Twitter</span></a>
+									</div>
+								</div> <!-- .col-xs-2 -->
+								<div class="col-xs-4 text-right">
+									<small>Copyright © Baronesa. 2014. All rights reserved.</small><br>
+									<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+								</div> <!-- .col-xs-4 -->
+							</div> <!-- .row -->
 						</div> <!-- .container -->
 					</div> <!-- .site-footer -->
 				</div> <!-- .extra-footer -->
@@ -97,7 +178,10 @@
 	<script src="http://localhost:35729/livereload.js"></script>
 	<script>
 	jQuery(document).ready(function(){
-
+		$('.box-banner .hand').css({right:'-800px'});
+		$('.box-banner .text').css({display: 'none'});
+		$('.box-banner .hand').stop(true, true).delay(1000).animate({right: '-40px'}, {duration: 1000, delay: true, easing: 'easeInOutExpo'});
+		$('.box-banner .text').stop(true, true).delay(1000).fadeIn({duration: 1500, delay: true, easing: 'easeInOutExpo'});
 	});
 	</script>
 </body>

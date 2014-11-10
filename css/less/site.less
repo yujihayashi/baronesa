@@ -1,6 +1,6 @@
-@primary-color: #812d2a; 
-@secondary-color: #089bdf;  
-@third-color: #b6967e;  
+@primary-color: #af0000; 
+@secondary-color: #9c7c30;  
+@third-color: #9c7c30;  
 /*
 FUNÇÕES PADRÕES START
 *********************************************************************/
@@ -28,7 +28,7 @@ NON-RESPONSIVE START
 **********************************************************************************************/
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO START */
 .container {max-width: none !important;width: 960px;}
-.navbar-nav > li > a {padding-top: 15px;padding-bottom:15px;}
+.navbar-nav > li > a {padding-top: 18px;padding-bottom:18px;}
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
 /* Finesse the page header spacing */.page-header {margin-bottom: 30px;}.page-header .lead {margin-bottom: 10px;}/* Non-responsive overrides** Utilitze the following CSS to disable the responsive-ness of the container,* grid system, and navbar.*//* Reset the container *//* Always float the navbar header */.navbar-header {float: left;}/* Undo the collapsing navbar */.navbar-collapse {display: block !important;height: auto !important;padding-bottom: 0;overflow: visible !important;}.navbar-toggle {display: none;}.navbar-collapse {border-top: 0;}.navbar-brand {margin-left: -15px;}/* Always apply the floated nav */.navbar-nav {float: left;margin: 0;}.navbar-nav > li {float: left;}/* Redeclare since we override the float above */.navbar-nav.navbar-right {float: right;}/* Undo custom dropdowns */.navbar .navbar-nav .open .dropdown-menu {position: absolute;float: left;background-color: #fff;border: 1px solid #cccccc;border: 1px solid rgba(0, 0, 0, 0.15);border-width: 0 1px 1px;border-radius: 0 0 4px 4px;-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);}.navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #333;}.navbar .navbar-nav .open .dropdown-menu > li > a:hover,.navbar .navbar-nav .open .dropdown-menu > li > a:focus,.navbar .navbar-nav .open .dropdown-menu > .active > a,.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {color: #fff !important;background-color: #428bca !important;}.navbar .navbar-nav .open .dropdown-menu > .disabled > a,.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {color: #999 !important;background-color: transparent !important;}
 /**********************************************************************************************
@@ -39,17 +39,57 @@ NON-RESPONSIVE END
 small {display: inline-block;line-height: 1.1;}
 textarea {resize:vertical;}
 a, button  {transition: all 0.25s ease 0s;}
+hr {background: url(../imagem/site/dashed.gif) repeat-x center;height: 1px;border:0;}
 /*
 FONTS START
 **********************************************************************************************/
 .box-chamada {font-family: 'robotoblack', Arial, sans-serif;font-weight: normal;}
+.box-chamadas .link, .footer-header, .navbar-nav {font-family: 'hagin_caps_mediumregular', Arial, sans-serif;font-weight: normal;}
 /**********************************************************************************************
 FONTS END
 */
 /*
 ESTRUTURA START
 **********************************************************************************************/
-
+.extra-header {
+	background: url(../imagem/site/bg-header.jpg) no-repeat center top;
+	.navbar {border:0;margin:0;text-align: center;}
+	// .navbar-header, .navbar-nav {float: none;display: inline-block;vertical-align: top;}
+	.navbar-header {float: none;text-align: center;}
+	.navbar-brand {
+		height: 112px;padding:5px 10px;margin:0;display: block;float: none;position: relative;z-index: 110;width: 100%;text-align: center;
+		> img {display: inline-block;}
+	}
+	.navbar-nav {
+		margin-top:42px;font-size: 18px;text-transform: uppercase;
+		> li {
+			> a {padding-left: 20px;padding-right: 20px;}
+			+ li {background: url(../imagem/site/bg-menu-item.png) no-repeat left center;padding-left: 2px;}
+		}
+	}
+	.navbar-right {margin-right: -20px;}
+	.navbar-left {margin-left: -20px;}
+}
+.extra-central {
+	background: url(../imagem/site/bg-central.jpg) repeat-y center top;
+	.site-central {background: url(../imagem/site/bg-central-top.jpg) no-repeat center top;}
+}
+.extra-parceiros {
+	background: url(../imagem/site/bg-parceiros.jpg) no-repeat center top;
+	.box-social {margin:30px 0;}
+	.box-parceiros {margin:15px 0;}
+}
+.extra-footer {
+	font-size: 12px;background: @primary-color;border-top:3px solid @secondary-color;border-bottom:3px solid @secondary-color;
+	.site-footer {padding-top:18px;padding-bottom: 20px;}
+	.footer-header {font-size: 24px;margin-right: 10px;}
+	.social-footer {
+		> a, > span {
+			display: inline-block;
+			+ a, + span {margin-left: 10px;}
+		}
+	}
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -59,14 +99,51 @@ CLASSES START
 [class^='lista-'], [class^='lista-'], [class^='menu-'], [class^='menu-'] ul, .cycle-slideshow {list-style:none;margin-bottom:0;padding-left:0;}
 .btn-gray {background: #EEE;color:#C93F2A;}
 .btn-rounded {-webkit-border-radius: 150px;-moz-border-radius: 150px;border-radius: 150px;}
+.box-parceiros {
+	text-align: center; padding:30px 0;
+	.link {display: inline-block;margin:10px 5px;}
+}
+.box-social {
+	border:1px solid @third-color;height: 265px;background: #000;
+	&.facebook {padding:17px;}
+	&.instagram {background-image: url(../imagem/site/box-instagram.jpg) ; background-repeat:no-repeat;background-position: center top;}
+}
+.box-banner {
+	background: url(../imagem/site/bg-banner.jpg) no-repeat center top;position: relative;
+	&, .cycle-slideshow, .cycle-slideshow li {height: 426px;overflow: hidden;}
+	&, .cycle-slideshow li {width: 100%;}
+	.cycle-slideshow {max-width: 1262px;margin:0 auto;position: relative;z-index: 1;}
+	.content {position: relative;}
+	.hand {position: absolute;right: -40px;top: -10px;}
+	.media-heading {text-shadow:3px 3px 3px rgba(0, 0, 0, .34);line-height: .8;}
+	.text {width: 450px;margin-left: 60px;margin-top:85px;}
+	.extra {background: url(../imagem/site/bg-central-bottom.png) no-repeat center bottom;position: absolute;z-index: 2;left: 0;right: 0;bottom: 0;height: 37px;}
+}
+.box-chamadas {
+	background: url(../imagem/site/bg-chamadas.jpg) no-repeat center top;
+	.chamada {
+		width: 50%;position: relative;float: left;
+		+ .chamada {border-left: 1px solid #000;}
+		&, .cycle-slideshow, .cycle-slideshow li {height: 286px;}
+		.cycle-slideshow, .cycle-slideshow li {width: 100%;}
+		.cycle-slideshow {position: relative;z-index: 1;}
+		.link {display: block;position: absolute;z-index: 2;left: 30px;top: 30px;right: 30px;bottom: 30px;border:1px solid @third-color;text-align: center;font-size: 26px;text-transform: lowercase;color: #FFF;padding-top:92px;}
+		&.chamada-left {
+			.link {text-indent: -1000px;overflow: hidden;}
+		}
+	}
+}
 
 .imagem {display: inline-block;overflow: hidden;max-width: 100%;}
 .imagem-rounded {-webkit-border-radius: 150px;-moz-border-radius: 150px;border-radius: 150px;}
-.inline-block {display:inline-block;}
+.inline-block {display:inline-block;vertical-align: middle;}
 [class^='icon-'], [class*='icon-'] {background-repeat:no-repeat;vertical-align:middle;display:inline-block;background-image:url(../imagem/site/icon.png);}
 
 .space {width:1%;display:inline-block;height:100%;vertical-align:middle;}
 .relative {position: relative;}
+
+.text-warning {color: #c9ac43;transition:all 0.25s ease 0s;}
+.text-warning:hover {color: darken(#c9ac43, 10%);}
 /**********************************************************************************************
 CLASSES END
 */

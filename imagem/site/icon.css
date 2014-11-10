@@ -1,0 +1,12 @@
+.icon{ background:url("icon.png") top left no-repeat; }
+.icon-hand{ width:545px; height:423px; background-position:-1px -1px; }
+.icon-chopp{ width:134px; height:146px; background-position:-1px -425px; }
+.icon-talheres-right{ width:87px; height:97px; background-position:-136px -425px; }
+.icon-talheres-left{ width:87px; height:97px; background-position:-224px -425px; }
+.icon-fotos-right{ width:112px; height:91px; background-position:-312px -425px; }
+.icon-fotos-left{ width:88px; height:88px; background-position:-425px -425px; }
+.icon-facebook{ width:42px; height:42px; background-position:-1px -572px; }
+.icon-twitter{ width:42px; height:42px; background-position:-44px -572px; }
+.icon-arrow-right-white{ width:16px; height:22px; background-position:-514px -425px; }
+.icon-arrow-left-white{ width:16px; height:22px; background-position:-87px -572px; }
+
